@@ -1,2 +1,3 @@
-# concurrency-guessing-game
+# Concurrency Guessing Game
+
 A golang concurrency programming example
