@@ -1,3 +1,3 @@
 # Concurrency Guessing Game
 
-A golang concurrency programming example
+A golang concurrency programming example using goroutine, channel, and context.
