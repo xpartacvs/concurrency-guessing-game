@@ -45,6 +45,7 @@ func (w *Player) Start(guessNum chan int) {
 				w.logger.Printf("Finally on the %dx trials, Player-%d has guess a correct number : %d.\n", n, w.index, guessNumber)
 				w.ctxCancel()
 				guessNum <- w.index
+				close(guessNum)
 				return
 			}
 			w.logger.Printf("Player-%d has %dx failed on guessing number: %d.\n", w.index, n, guessNumber)
